@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFX_UTIL", "OFX_Util\OFX_UTIL.csproj", "{79808F63-E7AB-4535-82F2-2D52C84C2BCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SERVICES", "SERVICES", "{87797300-75DD-4ACC-805B-9E2105A3A9EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SERVICESAPI", "SERVICESAPI\SERVICESAPI.csproj", "{809D066D-6FD1-45B1-97DF-BFD85D7DF95F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SECURITY", "SECURITY", "{95038AB4-94FB-44A0-AA0A-E0670A934C0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CERTIFICATES", "CERTIFICATES", "{3C928E06-581A-41BA-A60F-34E56CA474DA}"
+	ProjectSection(SolutionItems) = preProject
+		CA - Test Oziel Junior.pfx = CA - Test Oziel Junior.pfx
+		localhost - Test Oziel Junior.pfx = localhost - Test Oziel Junior.pfx
+		Thumbprint.txt = Thumbprint.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VIEWER", "VIEWER", "{068FEEFD-4933-4387-A83F-7E15A2183AE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VIEWERWEB", "VIEWERWEB\VIEWERWEB.csproj", "{67C55A89-8928-4862-8CEE-63299B74641E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79808F63-E7AB-4535-82F2-2D52C84C2BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79808F63-E7AB-4535-82F2-2D52C84C2BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79808F63-E7AB-4535-82F2-2D52C84C2BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79808F63-E7AB-4535-82F2-2D52C84C2BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809D066D-6FD1-45B1-97DF-BFD85D7DF95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809D066D-6FD1-45B1-97DF-BFD85D7DF95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809D066D-6FD1-45B1-97DF-BFD85D7DF95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809D066D-6FD1-45B1-97DF-BFD85D7DF95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C55A89-8928-4862-8CEE-63299B74641E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C55A89-8928-4862-8CEE-63299B74641E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C55A89-8928-4862-8CEE-63299B74641E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C55A89-8928-4862-8CEE-63299B74641E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{809D066D-6FD1-45B1-97DF-BFD85D7DF95F} = {87797300-75DD-4ACC-805B-9E2105A3A9EC}
+		{3C928E06-581A-41BA-A60F-34E56CA474DA} = {95038AB4-94FB-44A0-AA0A-E0670A934C0B}
+		{67C55A89-8928-4862-8CEE-63299B74641E} = {068FEEFD-4933-4387-A83F-7E15A2183AE3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F1C44F2-2748-444C-A16D-51ADB3BD7B04}
+	EndGlobalSection
+EndGlobal

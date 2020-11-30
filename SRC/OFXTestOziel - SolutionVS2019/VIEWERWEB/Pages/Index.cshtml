@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <form method="post"
+          data-ajax="true"
+          data-ajax-method="post"
+          data-ajax-url="@Url.Page("OnPostAsync", "Index")"
+          data-ajax-loading="#loading"
+          data-ajax-mode="replace"
+          data-ajax-update="#updateDiv"
+          enctype="multipart/form-data">
+
+        <div class="text-center">
+            <h1 class="display-4">Simple Test - OFX - Oziel</h1>
+            <br />
+            <br />
+        </div>
+
+        <div class="text-center">
+            <h3 class="display-4">First</h3>
+            <p>ENTER WITH URL TO SENDER (TARGET SERVICESPI)</p>
+            @Html.TextBoxFor(m => m.URL)
+            <br />
+            <br />
+        </div>
+
+        <div class="text-center">
+            <h3 class="display-4">Second</h3>
+          
+                <input type="file" asp-for="Upload" />
+                <input type="submit" />
+           
+        </div>
+
+
+        <span id="loading" style="display:none;"> <i class="fas fa-spinner fa-spin"></i></span>
+    </form>
+
+    <div id="updateDiv">
+        
+           
+
+        </div>
+
+        <!-- include jquery libraries -->
+        @section Scripts {
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery-ajax-unobtrusive@3.2.6/dist/jquery.unobtrusive-ajax.min.js"></script>
+        }
